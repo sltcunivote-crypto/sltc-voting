@@ -6,6 +6,9 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+// Force dynamic rendering to prevent build-time errors
+export const dynamic = 'force-dynamic'
+
 interface StorageFile {
   name: string
   id: string
@@ -35,12 +38,20 @@ export default function GalleryPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-  )
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+  const supabase = supabaseUrl && supabaseKey
+    ? createBrowserClient(supabaseUrl, supabaseKey)
+    : null
 
   useEffect(() => {
+    if (!supabase) {
+      setError("Supabase client not initialized. Please check environment variables.")
+      setLoading(false)
+      return
+    }
+
     const fetchImages = async () => {
       try {
         setLoading(true)
